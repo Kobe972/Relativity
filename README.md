@@ -1,3 +1,15 @@
+<h4 align="center">We couldn't afford an Oculus so we built one
+</h4>
+
+<p align="center">
+  <img src="https://img.shields.io/github/license/relativty/Relativ.svg">
+  <img src="https://img.shields.io/github/stars/relativty/Relativ.svg">
+  <img src="https://img.shields.io/github/issues/relativty/Relativ.svg">
+</p>
+
+<img src="https://github.com/relativty/fastVR-sdk/blob/master/img/fastVR_demo.gif" width="100%">
+<h4 align="center">Build your own VR headset for $100 💸
+</h4>
 <h1 align="center">
   <br>
   <a href="https://relativty.net"><img src="https://github.com/AdmiraalHugo/Relativty-LM/blob/master/img/leapmotion-gif.gif" width="75%"></a>
