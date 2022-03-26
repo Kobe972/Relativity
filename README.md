@@ -14,10 +14,18 @@
   <br>
   <a href="https://relativty.net"><img src="https://github.com/AdmiraalHugo/Relativty-LM/blob/master/img/leapmotion-gif.gif" width="75%"></a>
 </h1>
+# Why Relativ? 📖
+
+<p> My name is <a href="https://twitter.com/maximecoutte">Maxime Coutte</a>.  I’m 16 years old and I live in a small village in the countryside where I’m the only teenager. With my best friends, <a href="https://medium.com/@jonasceccon">Jonas Ceccon</a> and <a href="https://medium.com/@gabrielcombe">Gabriel Combe</a>, and my math teacher <a href="https://www.linkedin.com/in/jérôme-dieudonne-696a18b5"> Jerome Dieudonne </a> (we call him Sensei) we built our own VR headset for $100.
+
+<p> I started programming when I was 13, thanks to Sensei when he created a robotics club. On the first day we were 12 students, the next week we were 3 - yep, you guessed it, the other two were Gabriel and Jonas. I fell in love with VR because of an anime called SAO, but the problem was that the Oculus Rift was way too expensive for me. I talked about this with Gabriel and we both agreed that we should build our own VR headset. That got us into the math and physics behind VR (quaternions, proper acceleration, antiderivatives…). Then we bought the cheapest components we could and we reinvented VR. Now using <a href="https://github.com/relativty/fastVR-sdk">FastVR</a> and Relativ you can
+build your VR headset too. </p>
+<p> Here's a schematic by TheYxxy to give you an overview of the project: </p>
+  <a href="https://github.com/TheYxxy/Relativ"><img src="https://raw.githubusercontent.com/TheYxxy/Relativ/master/img/Schematic.png"  width=100%></a>
 
 # Why Relativty LM? 📖
 
-<p> I love the Relativty headset as it is, but I wanted to do something more with it, just like hand tracking. The first and best way to do this, is using a Leap Motion controller. After some research, and testing, I got it working! So I want to share this with you. Here you can find what you will need, and a small documentation.
+<p> I love the Relativty headset as it is, but I wanted to do something more with it, just like hand tracking. The first and best way to do this, is using a Leap Motion controller. After some research, and testing, I got it working! So I want to share this with you. Here you can find what you will need, and a small documentation.</p>
 
 # Getting Started ⚡️
 
