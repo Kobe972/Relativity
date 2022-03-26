@@ -91,6 +91,20 @@ To learn more about the features of the Firmware, Software and Hardware visit th
 We also have a friendly Discord server, a place for our community to learn, share their knowledge, and ask for help. 
 All the links are at <a href="https://relativty.com">relativty.com</a>.
 
+<img align="right" width="100" height="100" src="https://github.com/relativty/Relativ/blob/master/img/gabriel.png"> </p>
+<p align="left"> <strong> Gabriel: </strong>I work on optics for <a href="https://github.com/relativty/fastVR-sdk">FastVR</a>, 3D conception with Maxime and cheap tracking for the next big update. </p>
+<br>
+<br>
+<img align="right" width="100" height="100" src="https://github.com/relativty/Relativ/blob/master/img/maxime.png"> </p>
+<p align="left"> <strong> Maxime: </strong> I created <a href="https://github.com/relativty/wrmhl">WRMHL</a> and with Gabriel we created <a href="https://github.com/relativty/fastVR-sdk">FastVR</a>. I'm also behind the code for the hardware. </p>
+<br>
+<br>
+<img align="right" width="100" height="100" src="https://github.com/relativty/Relativ/blob/master/img/jonas.png"> </p>
+<p align="left"> <strong> Jonas: </strong>  I convinced a Chinese factory to sell us premium components at low prices and I'm working on a Master Guide for Relativ. </p>
+<br>
+<br>
+<img align="right" width="100" height="100" src="https://github.com/relativty/Relativ/blob/master/img/sensei.png"> </p>
+<p align="left"> <strong> Sensei: </strong>  I'm the theoretician of the team. I teach them math and I help them to solve algorithm issues. </p>
 # Start Building Relativty
 
 <p align="center"> <img src="ressources/img/open.jpg"> </p>
@@ -102,13 +116,36 @@ Alternatively, any processor that supports the ArduinoCore and is connected to a
 ## Building The Relativty Motherboard
 ### PCB Manufacturing.
 
+<img src="/img/headset.JPG" width="70%">
 We first start with the naked PCB.
 
 it can be manufactured and bought for around $4 on websites like <a href="https://jlcpcb.com/">jlcpcb</a>.
 
 You’ll need to provide the Gerber file folder `Relativty_Electronics_build/GerberFiles.zip` which describes the shape of the board.
 
+### What components ?
+There are a few variants of Relativ. The original design by the founders **(deprecated)** and two new version by TheYXXY and Vang1 based on a on a model from <a href="http://horizonlab.co/2017/05/28/vr-headset-fully-3d-printed/">Horizon Lab</a>. Shoutout to them for making this possible and allowing their design to be modified! </p>
 
+##### Parts needed for all the designs:
+* Arduino Due, $34 for the official one or $10 for a Chinese clone
+* GY-521 MPU-6050, $1
+* 5.5 inch 2560*1440 2K LCD Screen HDMI to MIPI, up to 100€ on AliExpress (<a href="https://www.aliexpress.com/item/5-5-inch-1440x2560-2K-IPS-LCD-screen-display-with-HDMI-top-MIPI-controller-board-for/32817672501.html">recommended</a>) ⚠️ Price may vary a lot
+* Face foam, about $4, see [here](https://www.ebay.com/itm/Face-Foam-Replacement-Eye-Masks-Pads-Cover-Fit-For-HTC-Vive-VR-Goggles-Headphone/152798949280?_mwBanner=1&_rdt=1 "here")
+
+###### Extra needed for the TheYXXY design:
+* Biconvex lens, Focal length 37mm, 45mm diameter <a href="https://www.ebay.com/">recommended</a>
+* 4 M3 Screws and 2 M2 screws, both with nuts, $3 - alternatively you can use hot glue if M2 screws are not available
+* TPU 95 filament is recommended in addition to the normal PLA, and a printer which supports printing it
+* A screen which has a cable with a 90 degree bend just like the <a href="https://www.aliexpress.com/item/5-5-inch-1440x2560-2K-IPS-LCD-screen-display-with-HDMI-top-MIPI-controller-board-for/32817672501.html">recommended</a> one. For the direction: it should go up behind the screen when the small non-screen part is on the right while looking at the screen.
+
+###### Extra needed for the Vang1 design:
+* Biconvex lens, Focal length 37mm, 45mm diameter <a href="https://www.ebay.com/">recommended</a>
+* Headstrap <a href="https://www.ebay.com/itm/SJCAM-SJ4000-SJ5000-Xiaomi-Yi-Head-Strap-Mount-Elastic-Adjustable-Head-Band/272024772003?ssPageName=STRK%3AMEBIDX%3AIT&_trksid=p2060353.m2749.l2649">recommended</a> (needs a bit modification)
+* ABS or PETG filament with 20% infill is recommended, but PLA also works fine. All the parts can be printed without infill.
+* M3 screws (More info will be added soon!!)
+
+###### Extra needed for the old (deprecated) design:
+* Fresnel lens Focal Length 80mm, $3 (<a href="https://www.ebay.com/itm/2Pcs-Fresnel-lens-Focal-Length-40-50-55-60-70-80mm-for-Google-Cardboard-3D-VR/201984369021">recommended</a>)
 ### Assembling
 
 Soldering the components onto the naked PCB. 
@@ -133,7 +170,6 @@ PIN 2   -> INT
 ```
 
 If you are using an MPU-9250 with the alternative firmware provided the pinout is:
-
 ```
 5V      -> VCC  
 GND     -> GND  
@@ -156,6 +192,20 @@ In Arduino, Click File and then Preferences:
 - Go to `Tools > Board > Board Manager` and you should see the Relativty Board, click install.
 - Reboot the Arduino IDE and under Tools > Boards, select Relativty.
 - You can now open `Relativty_Firmware/firmware/firmware.ino` and upload it to your board.
+**A detailed documentation can be found on our <a href="https://wiki.relativty.net/index.php/Main_Page">wiki<a/>!**
+  
+Now what you need to do is 3D-print the hardware; if needed you can change any models with provided Source Files.
+
+⚠️ PAY EXTRA ATTENTION TO THE SCREEN, IT'S VERY FRAGILE ⚠️
+
+# Building the software
+Make sure you have all the libraries needed installed and upload the following program to the Arduino:
+
+Path: Relativ/src/main/main.ino
+
+Our documentation can be found on our <a href="https://wiki.relativty.net/index.php/Main_Page">wiki<a/>.
+
+# Play some demos or use SteamVR
 
 If you are using a different board e.g. Arduino Due:
 
