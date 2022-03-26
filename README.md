@@ -184,7 +184,19 @@ Then push the `ERASE` and the `RESET` button on the Arduino Due and you’ll be 
 <p align="center"> <img src="ressources/img/cards.jpg"> </p>
 You’ll now need to install the Relativty board in the Arduino IDE. 
 
+Now what you need to do is 3D-print the hardware; if needed you can change any models with provided Source Files. 
+You will need to print the following :
+
+* (1x): Part 1, Part 2a, Part 2b, Part 3, Part 3a, Part 4, Part 5
+* (2x): Part 2c, Part 2d, Part 3b
+* (1x) Part 6: Use of Flexible filament with 10% to 50% infill density
+* (3x) Part 7: Use of Flexible filament with 10% to 50% infill density
+* (1x) Part 8: Use of Flexible filament with 5% infill density (it makes it like a sponge)
+* If you uses the the short straps (190mm, because the large ones don't fit in your printer for example), there are extensions (part 9) that should be printed aswell (2x).
+
 To do that copy that JSON URL: https://raw.githubusercontent.com/relativty/Relativty/master/Relativty_Firmware/package_Relativty_board_index.json and open the Arduino IDE
+
+Additional build information can be found in the build manuals in the 3D-Models folders.
 
 In Arduino, Click File and then Preferences:
 
